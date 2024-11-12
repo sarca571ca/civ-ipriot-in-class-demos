@@ -26,7 +26,11 @@ The easiest way to work with this repository during in-class demonstrations is t
 3. Create an **untracked** folder for your own work:
 
     ```bash
+<<<<<<< HEAD
     mkdir ../my-work
+=======
+    git switch -c local_class_branch origin/yyyy/sn/lecturer
+>>>>>>> main
     ```
 
     This folder will be used to store your own work and will not be tracked by git.
@@ -34,7 +38,11 @@ The easiest way to work with this repository during in-class demonstrations is t
 4. During the class, pull the latest changes:
 
     ```bash
+<<<<<<< HEAD
     git pull
+=======
+    git switch -c local_experiments
+>>>>>>> main
     ```
 
 5. If needed, copy to your own work folder:
@@ -54,14 +62,24 @@ The objective of this initial setup is to make it easy for you to pull work-in-p
 2. Clone your fork locally:
 
     ```bash
+<<<<<<< HEAD
     git clone https://github.com/<YOUR_USER_NAME>/civ-ipriot-in-class-demos.git
     cd civ-ipriot-in-class-demos
+=======
+    git switch local_experiments
+    git merge origin/yyyy/sn/lecturer
+>>>>>>> main
     ```
 
 3. Set this NMTAFE repository as the **upstream**
 
     ```bash
+<<<<<<< HEAD
     git remote add upstream https://github.com/NM-TAFE/civ-ipriot-in-class-demos.git
+=======
+    git switch local_experiments
+    git rebase origin/yyyy/sn/lecturer
+>>>>>>> main
     ```
 
 4. Switch to the current semester's branch/lecturer. For example:
